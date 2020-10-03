@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.8.1 on win32)" generated="20201002 20:24:28.620" rpa="false">
+<suite id="s1" name="Test" source="D:\_Automation\_Curse\Automation_robot_python\test.robot">
+<test id="s1-t1" name="Deve retornar mensagem de boas vindas">
+<kw name="Welcome" library="app">
+<arguments>
+<arg>Tiago</arg>
+</arguments>
+<assign>
+<var>${result}</var>
+</assign>
+<msg timestamp="20201002 20:24:28.642" level="INFO">${result} = Ola Tiago, bem vindo ao curso</msg>
+<status status="PASS" starttime="20201002 20:24:28.642" endtime="20201002 20:24:28.642"></status>
+</kw>
+<kw name="Should Be Equal" library="BuiltIn">
+<doc>Fails if the given objects are unequal.</doc>
+<arguments>
+<arg>${result}</arg>
+<arg>Ola Tiago, bem vindo ao curso</arg>
+</arguments>
+<status status="PASS" starttime="20201002 20:24:28.642" endtime="20201002 20:24:28.643"></status>
+</kw>
+<status status="PASS" starttime="20201002 20:24:28.641" endtime="20201002 20:24:28.643" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20201002 20:24:28.623" endtime="20201002 20:24:28.644"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
